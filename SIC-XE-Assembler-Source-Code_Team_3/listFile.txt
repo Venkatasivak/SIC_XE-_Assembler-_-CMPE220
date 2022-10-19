@@ -1,0 +1,30 @@
+	 Pass	1 ... 
+
+line number     address        label    op      operands        
+===============================================================
+1               000000         COPY     START                  
+                ***START ERROR                                 
+2               000000         FIRST    STL     RETDR          
+                ***Invalid Expression                          
+3               000000                  LD      #LENGTH        
+                ***Invalid opcode 1                            
+4               000000         CLOOP   +JSU     RDREC          
+                ***Invalid opcode field                        
+5               000000                  LDA     LENGTH         
+                ***Invalid Expression                          
+6               000000                  COP     #0             
+                ***Invalid opcode 1                            
+7               000000                  JEQ     ENDFIL         
+                ***Invalid Expression                          
+8               000000                 +JSUB    WRREC          
+                ***Invalid Expression                          
+9               000000                  J       CLOP           
+                ***Invalid Expression                          
+10              000000                                         
+                ***Invalid opcode 1                            
+11              000000                                         
+                ***Invalid opcode 1                            
+
+***************************************************************
+
+                ***The program has no END clause               
